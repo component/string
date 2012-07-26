@@ -1,7 +1,77 @@
 
 # string
 
-  String manipulation
+  String manipulation.
+
+## API
+
+   - [.capitalize(str)](#capitalizestr)
+   - [.uncapitalize(str)](#uncapitalizestr)
+   - [.capitalizeWords(str)](#capitalizewordsstr)
+   - [.uncapitalizeWords(str)](#uncapitalizewordsstr)
+   - [.trim(str)](#trimstr)
+   - [.trimLeft(str)](#trimleftstr)
+   - [.trimRight(str)](#trimrightstr)
+<a name="" />
+ 
+<a name="capitalizestr" />
+### .capitalize(str)
+should capitalize the first letter.
+
+```js
+s.capitalize('hey there').should.equal('Hey there');
+```
+
+<a name="uncapitalizestr" />
+### .uncapitalize(str)
+should uncapitalize the first letter.
+
+```js
+s.uncapitalize('Hey there').should.equal('hey there');
+```
+
+<a name="capitalizewordsstr" />
+### .capitalizeWords(str)
+should capitalize each word.
+
+```js
+s.capitalizeWords('hey there').should.equal('Hey There');
+```
+
+<a name="uncapitalizewordsstr" />
+### .uncapitalizeWords(str)
+should uncapitalize each word.
+
+```js
+s.uncapitalizeWords('Hey There').should.equal('hey there');
+s.uncapitalizeWords('HeY TherE').should.equal('heY therE');
+```
+
+<a name="trimstr" />
+### .trim(str)
+should trim leading / trailing whitespace.
+
+```js
+s.trim('  foo bar  ').should.equal('foo bar');
+s.trim('\n\n\nfoo bar\n\r\n\n').should.equal('foo bar');
+```
+
+<a name="trimleftstr" />
+### .trimLeft(str)
+should trim leading whitespace.
+
+```js
+s.trimLeft('  foo bar  ').should.equal('foo bar  ');
+```
+
+<a name="trimrightstr" />
+### .trimRight(str)
+should trim trailing whitespace.
+
+```js
+s.trimRight('  foo bar  ').should.equal('  foo bar');
+```
+
 
 ## License 
 
