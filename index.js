@@ -18,3 +18,15 @@ exports.uncapitalizeWords = function(str){
     return exports.uncapitalize(word);
   });
 };
+
+exports.trim = function(str){
+  return exports.trimRight(exports.trimLeft(str));
+};
+
+exports.trimLeft = function(str){
+  return str.replace(/^\s*/, '');
+};
+
+exports.trimRight = function(str){
+  return str.replace(/\s*$/, '');
+};

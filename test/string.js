@@ -25,3 +25,22 @@ describe('.uncapitalizeWords(str)', function(){
     _.uncapitalizeWords('HeY TherE').should.equal('heY therE');
   })
 })
+
+describe('.trim(str)', function(){
+  it('should trim leading / trailing whitespace', function(){
+    _.trim('  foo bar  ').should.equal('foo bar');
+    _.trim('\n\n\nfoo bar\n\r\n\n').should.equal('foo bar');
+  })
+})
+
+describe('.trimLeft(str)', function(){
+  it('should trim leading whitespace', function(){
+    _.trimLeft('  foo bar  ').should.equal('foo bar  ');
+  })
+})
+
+describe('.trimRight(str)', function(){
+  it('should trim trailing whitespace', function(){
+    _.trimRight('  foo bar  ').should.equal('  foo bar');
+  })
+})
