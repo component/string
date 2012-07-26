@@ -6,3 +6,9 @@ describe('.capitalize(str)', function(){
     _.capitalize('hey').should.equal('Hey');
   })
 })
+
+describe('.uncapitalize(str)', function(){
+  it('should uncapitalize the first letter', function(){
+    _.uncapitalize('Hey').should.equal('hey');
+  })
+})
