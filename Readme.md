@@ -12,6 +12,8 @@
    - [.trim(str)](#trimstr)
    - [.trimLeft(str)](#trimleftstr)
    - [.trimRight(str)](#trimrightstr)
+   - [.startsWith(str, val)](#startswithstr)
+   - [.endsWith(str, val)](#endswithstr)
 <a name="" />
  
 <a name="capitalizestr" />
@@ -70,6 +72,24 @@ should trim trailing whitespace.
 
 ```js
 s.trimRight('  foo bar  ').should.equal('  foo bar');
+```
+
+
+<a name="startswithstr" />
+### .startsWith(str, val)
+whether string starts with...
+
+```js
+s.startsWith('foo bar', 'foo').should.equal(true);
+```
+
+
+<a name="endswithstr" />
+### .trimRight(str)
+whether string ends with...
+
+```js
+s.endsWith('foo bar', 'bar').should.equal(true);
 ```
 
 
