@@ -44,3 +44,23 @@ describe('.trimRight(str)', function(){
     s.trimRight('  foo bar  ').should.equal('  foo bar');
   })
 })
+
+describe('.startsWith(str, val)', function(){
+  it('should start with given character', function(){
+    s.startsWith('foo bar', 'f').should.equal(true);
+  })
+
+  it('should start with given word', function(){
+    s.startsWith('foo bar', 'foo').should.equal(true);
+  })
+})
+
+describe('.endsWith(str, val)', function(){
+  it('should end with given character', function(){
+    s.endsWith('foo bar', 'r').should.equal(true);
+  })
+
+  it('should end with given word', function(){
+    s.endsWith('fruit bar', 'bar').should.equal(true);
+  })
+})

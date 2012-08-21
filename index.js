@@ -30,3 +30,13 @@ exports.trimLeft = function(str){
 exports.trimRight = function(str){
   return str.replace(/\s*$/, '');
 };
+
+exports.startsWith = function(str, val){
+  var pattern = new RegExp('^'+val);
+  return pattern.test(str);
+};
+
+exports.endsWith = function(str, val){
+  var pattern = new RegExp(val+'$');
+  return pattern.test(str);
+};
