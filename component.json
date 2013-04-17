@@ -1,0 +1,13 @@
+{
+  "name": "string",
+  "repo": "component/string",
+  "description": "String Manipulation",
+  "version": "0.0.1",
+  "keywords": ["string", "manipulation", "trim", "capitalize", "camelcase", "snakecase"],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
