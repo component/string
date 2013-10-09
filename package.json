@@ -2,12 +2,23 @@
   "name": "string",
   "version": "0.0.1",
   "description": "String manipulation",
-  "keywords": ["string", "manipulation", "trim", "capitalize", "camelcase", "snakecase"],
+  "keywords": [
+    "string",
+    "manipulation",
+    "trim",
+    "capitalize",
+    "camelcase",
+    "snakecase"
+  ],
   "author": "TJ Holowaychuk <tj@vision-media.ca>",
   "dependencies": {},
   "devDependencies": {
     "mocha": "*",
     "should": "*"
   },
-  "main": "index"
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/string.git"
+  }
 }
